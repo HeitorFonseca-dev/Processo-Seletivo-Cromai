@@ -1,5 +1,5 @@
 
-    function calcular(CatetoOposto) {
+    function calcular() {
         var valorHipotenusa = document.getElementById("inputHipotenusa").value;
         var valorCatetoOposto = document.getElementById("inputCatetoOposto").value;
         var valorCatetoAdjascente = document.getElementById("inputCatetoAdjascente").value;
