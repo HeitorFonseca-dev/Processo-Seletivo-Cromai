@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -14,68 +14,45 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <!--Favicon da página-->
     <link rel="shortcut icon" href="images.ico" type="image/x-icon" />
+    <!--javaScript-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="index.js"></script>
     <title>Calculadora Pitágoras</title>
 </head>
 
 <body>
-    <table>
-        <thead>
-            <div class="cabeçalho">
-                <h1>Heitor Ramos Fonseca</h1>
-            </div>
-            <div class="form-signin">
-                <div class="triangulo">
-                </div>
-            </div>
-            <div class="container px-4 text-center">
-                <div class="row gx-5">
-                    <div class="col">
-                        <td>
-                            <tr>
-                                <div id="calha" class="p-1">Calculadora - Teorema
-                                    de
-                                    Pitágoras</div>
-                            </tr>
-                        </td>
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex justify-content-center">
-                <div class="form-group col-md-3">
-                    <label for="inputCatetoOposto" class="sr-only">Cateto Oposto</label>
-                    <input type="text" id="inputCatetoOposto" class="form-control" placeholder="?">
-                    <label for="inputCatetoAdjascente" class="sr-only">Cateto Adjascente</label>
-                    <input type="text" id="inputCatetoAdjascente" class="form-control" placeholder="?">
-                    <label for="inputHipotenusa" class="sr-only">Hipotenusa</label>
-                    <input type="text" id="inputHipotenusa" class="form-control" placeholder="?" autofocus="">
-                </div>
-            </div>
-            <div class="d-flex justify-content-center">
-                <div class="text-right">
-                    <button type="button" class="btn btn-primary" onclick="calcular()">Calcular</button>
-                </div>
-            </div>
-            </div>
-            <div class="d-flex justify-content-center">
-                <div class="form-group col-md-3">
-                    <input type="text" id="resultado" class="form-control" placeholder="Resultado">
-                </div>
-            </div>
-            <td>
+    <div class="fundo">
+        <h1>Heitor Ramos Fonseca</h1>
+        <img src="Sem título5.png" alt="Pitágoras+Formula">
+        <div class="calculadora">
+            <h2>Calcular Teorema de Pitágoras</i></h2>
+            <table>
                 <tr>
-                    <div id="calha2" class="d-flex justify-content-center"> Fórmula do Teorema de Pitágoras</div>
+                    <div input-group mb-3>
+                        <td><input type="text" class="input-group-text" class="opcao" id="inputCatetoOposto"
+                                placeholder="Cateto Oposto" autofocus></td>
+                    </div>
+                    <div input-group mb-3>
+                        <td><input type="text" class="input-group-text" class="opcao" id="inputCatetoAdjacente"
+                                placeholder="Cateto Adjacente"></td>
+                    </div>
+                    <div input-group mb-3>
+                        <td><input type="text" class="input-group-text" class="opcao" id="inputHipotenusa"
+                                placeholder="Hipotenusa"></button></td>
+                    </div>
                 </tr>
-            </td>
-        </thead>
-    </table>
-
-    <p class="formula-pitagoras">
-        h² = c² + c²
-    </p>
-
-
+            </table>
+            <button type="button" id="calcular" class="btn btn-primary">Calcular</button>
+            <table>
+                <tr>
+                    <td>
+                        <div input-group mb-3>
+                            <input type="text" class="input-group-text" id="resultado" placeholder="Resultado">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
 </body>
 
 </html>

@@ -1,54 +1,36 @@
 body{
     font-family: "Roboto";
 }
-.cabeçalho {
+h1 {
     text-align: center;
     margin: 0 auto;
     display: block;
     font-size: 40px;
     font-weight: bold;
+    color: black;
 }
 
-#painel-superior{
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 16px;
-    color: inherit;
-}
-
-#calha{
-    background-color:rgba(255, 255, 0, 0.418);
-    width: 100%;
-    margin: 20px 0 30px;
+.fundo{
+    background-image: linear-gradient(45deg, rgb(127, 79, 190), rgb(79, 42, 165));
+    height: 100vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    font-size: 30px;
-    position: static;
-    font-weight: bold;
+}
+
+img{
+    margin: 40px 0 30px;
+    width: 25%;
 }
 
 
-.triangulo {
-    content: "";  
-    vertical-align: middle;
-    margin: 110px 0 0 100px;     
-    width: 0;
-    height: 0;
-    float: left;
-    border-left: 1px solid transparent;
-    border-right: 350px solid transparent;
-    border-bottom: 200px solid red;
-    
-}
 
 h2 {
     margin: 0 0 20px 0;
+    font-size: 30px;
 }
 
-.form-signin {
-    text-align: center;
-    margin: 200px auto;
 
-}
 
 input {
     padding: 10px;
@@ -61,32 +43,25 @@ button {
     
 }
 
-form label {
-    padding: 10px;
-    font-weight: bold;
+.calculadora{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 50%;
+    margin: 120px auto;
+    border-radius: 10px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    padding: 15px;
 }
 
-label {
-    text-transform: uppercase;
+#botao:hover{
+    background-color: blue;
+    cursor: pointer;
 }
 
-.resultado {
+#resultado{
+    margin-left: 230px;
+    margin-top: 10px;
     text-align: center;
-    margin: 0 auto;
-    display: block;
-    padding: 50px;
-}
-
-#calha2{
-    background-color:rgba(255, 255, 0, 0.418);
-    width: 100%;
-    margin: 50px 0 20px;
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.formula-pitagoras{
-    font-weight: bold;
-    font-size: 16px;
 }
