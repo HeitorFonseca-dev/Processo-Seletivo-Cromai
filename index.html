@@ -23,35 +23,35 @@
 <body>
     <div class="fundo">
         <h1>Heitor Ramos Fonseca</h1>
-        <img src="Sem título5.png" alt="Pitágoras+Formula">
-        <div class="calculadora">
-            <h2>Calcular Teorema de Pitágoras</i></h2>
-            <table>
-                <tr>
-                    <div input-group mb-3>
-                        <td><input type="text" class="input-group-text" class="opcao" id="inputCatetoOposto"
-                                placeholder="Cateto Oposto" autofocus></td>
-                    </div>
-                    <div input-group mb-3>
-                        <td><input type="text" class="input-group-text" class="opcao" id="inputCatetoAdjacente"
-                                placeholder="Cateto Adjacente"></td>
-                    </div>
-                    <div input-group mb-3>
-                        <td><input type="text" class="input-group-text" class="opcao" id="inputHipotenusa"
-                                placeholder="Hipotenusa"></button></td>
-                    </div>
-                </tr>
-            </table>
-            <button type="button" id="calcular" class="btn btn-primary">Calcular</button>
-            <table>
-                <tr>
-                    <td>
-                        <div input-group mb-3>
-                            <input type="text" class="input-group-text" id="resultado" placeholder="Resultado">
-                        </div>
-                    </td>
-                </tr>
-            </table>
+        <h2>Calculadora Pitágoras</h2>
+    </div>
+
+    <div class="form-signin">
+        <div class="triangulo">
+        </div>
+        <div class="d-flex justify-content-end">
+            <div class="form-group col-md-3">
+                <label for="inputHipotenusa" class="sr-only">Hipotenusa</label>
+                <input type="text" id="inputHipotenusa" class="form-control" placeholder="?"
+                    autofocus="">
+                <label for="inputCatetoOposto" class="sr-only">Cateto Oposto</label>
+                <input type="text" id="inputCatetoOposto" class="form-control" placeholder="?">
+                <label for="inputCatetoAdjascente" class="sr-only">Cateto Adjascente</label>
+                <input type="text" id="inputCatetoAdjascente" class="form-control"
+                    placeholder="?">
+            </div>
+        </div>
+        <div class="d-flex justify-content-end">
+            <div class="text-right">
+                <button type="button" class="btn btn-primary" onclick="calcular()">Calcular</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="d-flex justify-content-end">
+        <div class="form-group col-md-3">
+            <input type="text" id="resultado" class="form-control" placeholder="Resultado">
         </div>
 </body>
 
